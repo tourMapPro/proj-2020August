@@ -1,0 +1,161 @@
+:root {
+  --text-color: #022419;
+  --background-color: rgb(243, 182, 167);
+  --accent-color: ;
+
+  /* size */
+  --font-size-heading: 35px;
+  --font-size-large: 25px;
+  --font-size-medium: 14px;
+  --font-size-small: 12px;
+
+  /* animation */
+  --animation-duration: 300ms ease;
+
+  /* padding */
+  --padding: 8px 12px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-large);
+}
+
+.menubar_logo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 32px;
+}
+
+.menubar_logo:hover {
+  cursor: pointer;
+}
+
+.menubar_list {
+  display: flex;
+  width: 100%;
+}
+
+.menubar_list li {
+  margin-left: 40px;
+}
+
+.menubar_icons {
+  display: flex;
+  margin-right: 40px;
+  /* width: 100%; */
+}
+
+.menubar_icons li {
+  margin-left: 30px;
+}
+
+.nav_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 23px;
+}
+
+.main_image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  padding: 120px;
+  border-radius: 20vw;
+}
+
+.main_image img:hover {
+  opacity: 75%;
+}
+
+.heading a {
+  display: flex;
+  font-size: var(--font-size-heading);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.heading a:hover {
+  background-color: var(--background-color);
+}
+
+.spots {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .menubar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .menubar_logo {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menubar_list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menubar_list li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menubar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav_toggleBtn {
+    display: block;
+  }
+
+  .menubar_list.active {
+    display: flex;
+  }
+  .menubar_icons.active {
+    display: flex;
+  }
+}
