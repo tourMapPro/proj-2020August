@@ -31,7 +31,7 @@
 		if (userID != null) {
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("alert('logged in now')");
+			script.println("alert('Already with us')");
 			script.println("location.href ='index.html'");
 			script.println("</script>");
 		} 
@@ -54,7 +54,7 @@
 				session.setAttribute("userID", user.getUserID());
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
-				script.println("location.href='index.html'");
+				script.println("location.href='login.jsp'");
 				script.println("</script>");
 			}
 		}

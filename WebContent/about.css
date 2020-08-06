@@ -1,0 +1,59 @@
+:root { 
+	--text-color: #022419; 
+	--background-color: rgb(243, 182, 167);
+	--accent-color:;
+	/* size */
+	--font-size-heading: 35px; 
+	--font-size-large: 25px; 
+	--font-size-medium: 20px; 
+	--font-size-small: 16px;
+	/* animation */ 
+	--animation-duration: 300ms ease;
+	/* padding */ 
+	--padding: 8px 12px;
+	--margin-less: 20px;
+    --margin-basic:40px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Sora", sans-serif;
+}
+
+.about_short {
+	text-align: center;
+	margin-top: 100px;
+	font-weight: bolder;
+}
+
+
+/* simple intoduction */
+.about_intro {
+	margin-top: 150px;
+	width: 80%;
+	padding: 25px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 8px;
+}
+
+
+/* recommendation */
+.about_content {
+  margin-top: 150px;
+  background-color: black;
+  width: 80%;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.about_content p {
+ 
+  font-size: var(--font-size-medium);
+}
+
