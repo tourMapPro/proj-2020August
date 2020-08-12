@@ -14,65 +14,44 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>Sign in</title>
 
-<title>LOGIN</title>
+
+<link rel="stylesheet" href="signin.css" />
 </head>
 <body>
+ 
+  <%@ include file="top.html" %>
+  
+	<div class="wrapper">
+      <form class="form-signin">
+        <h2 class="form-signin-heading">SIGN IN</h2>
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          name="userID"
+          id="userID"
+          placeholder="ID"
+          required=""
+          autofocus=""
+        />
+        <br />
 
-	<%@include file="top.html"%>.
-
-
-	<div class="wrap">
-		<div class="form-wrap">
-			<div class="button-wrap">
-				<div id="btn"></div>
-				<button type="button" class="togglebtn" onclick="login()">LOGIN</button>
-				<button type="button" class="togglebtn" onclick="register()">JOIN</button>
-			</div>
-			<div class="social-icons">
-				<img src="fb.png" alt="facebook"> <img src="tw.png"
-					alt="twitter"> <img src="gl.png" alt="google">
-			</div>
-
-			<form id="login" method="post" action="loginAction.jsp"
-				class="input-group">
-				<input type="text" class="input-field" id="userID" name="userID"
-					placeholder="User ID" required> <input type="password"
-					class="input-field" placeholder="Enter Password" required><br />
-
-				<button class="submit">LOGIN</button>
-			</form>
-
-			<form id="register" method="post" action="joinAction.jsp"
-				class="input-group">
-				<input type="text" class="input-field" id="userID" name="userID"
-					placeholder="User ID" required> <input type="email"
-					class="input-field" id="userEmail" name="userEmail"
-					placeholder="Your Email" required> <input type="password"
-					class="input-field" id="userPassword" name="userPassword"
-					placeholder="Enter Password" required><br />
-
-				<button class="submit">REGISTER</button>
-			</form>
-		</div>
-	</div>
-	<script>
-		var x = document.getElementById("login");
-		var y = document.getElementById("register");
-		var z = document.getElementById("btn");
-
-		function login() {
-			x.style.left = "50px";
-			y.style.left = "450px";
-			z.style.left = "0";
-		}
-
-		function register() {
-			x.style.left = "-400px";
-			y.style.left = "50px";
-			z.style.left = "120px";
-		}
-	</script>
+        <input
+          type="password"
+          id="userPassword"
+          class="form-control"
+          name="userPassword"
+          placeholder="Password"
+          required=""
+        />
+        <br />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Login
+        </button>
+      </form>
+    </div>
 
 </body>
 </html>

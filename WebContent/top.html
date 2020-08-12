@@ -1,67 +1,50 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="style.css" />
-<script src="index.js" defer></script>
-<title>Welcome to Korea</title>
-</head>
-<body>
-
-
- <!-- Part 1 : logo, menu_list, menu_icons -->
-
-    <nav class="menubar">
-      <!-- logo -->
-      <div class="menubar_logo">
-        <a href="index.html"><img src="logogo.png" alt="logo" /></a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Web</title>
+    <meta name="description" content="tour tips of Korea" />
+    <meta name="author" content="H&L" />
+    <link rel="icon" type="image/png" href="/imgs/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="top.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar_logo">
+        <a href="index.html"><img src="imgs/heart.gif" alt="icon" /> </a>
       </div>
-      
-      <!--menu_list  -->
-      <ul class="menubar_list">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT_US</a></li>
-        <li><a href="">HISTORY</a></li>
-        <li><a href="">TRAVEL_TIPS</a></li>
-      </ul>
-      
-      <!-- menu_icons -->
-      <ul class="menubar_icons">
-        <li><a href="login.jsp">LOGIN/JOIN</a></li>
-        <li><a href="logoutAction.jsp">LOGOUT</a></li>
-        <li><a href="">MYPAGE</a></li>
-        <li>
-          <i class="fas fa-search"><a href=""></a></i>
-        </li>
-      </ul>
-      <!-- toggle button for controlling web size -->
-      <a href="#" class="nav_toggleBtn">
-        <i class="fas fa-bars"></i>
-      </a>
+      <div class="navbar_menu">
+        <ul class="navbar_menu">
+          <li class="navbar_menu_item active"><a href="index.html">HOME</a> </li>
+          <li class="navbar_menu_item"><a href="#about">ABOUT</a></li>
+          <li class="navbar_menu_item"><a href="#recommend">RECOMMENDATION</a></li>
+          <li class="navbar_menu_item"><a href="#travelTips">TRAVEL_TIPS</a></li>
+          <li class="navbar_menu_item"><a href="login.jsp">LOGIN</a></li>
+          <li class="navbar_menu_item"><a href="join.jsp">JOIN</a></li>
+        </ul>
+      </div>
+
+      <!-- toggle btn -->
+      <button class="navbar_togglebtn"><i class="fas fa-bars"></i></button>
     </nav>
+
+</body>
+</html>

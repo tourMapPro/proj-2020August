@@ -12,7 +12,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Login</title>
+<title>jsp 게시판</title>
 </head>
 <body>
 	<%
@@ -23,7 +23,8 @@
 	if(userID != null){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("location.href ='index.html'");
+		script.println("alert('이미 로그인이 되어 있음')");
+		script.println("location.href ='main.jsp'");
 		script.println("</script>");
 	}
 	UserDAO userDAO = new UserDAO();
@@ -32,28 +33,27 @@
 		session.setAttribute("userID", user.getUserID());
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('WELCOME')");
 		script.println("location.href='index.html'");
 		script.println("</script>");
 	}
 	else if (result==0) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('PASSWORD ERRORS')");
+		script.println("alert('비밀번호 오류')");
 		script.println("history.back()");
 		script.println("</script>");
 	}
 	else if (result==-1) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('PLEASE JOIN US')");
+		script.println("alert('존재하지 않는 아이디')");
 		script.println("history.back()");
 		script.println("</script>");
 	}
 	else if (result==-2) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('ERROR')");
+		script.println("alert('데이터베이스 오류 발생')");
 		script.println("history.back()");
 		script.println("</script>");
 	}

@@ -2,25 +2,22 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
-<%
-	request.setCharacterEncoding("UTF-8");
-%>
+<% request.setCharacterEncoding("UTF-8"); %>
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 
-<title>LOGOUT</title>
+<title>jsp 게시판</title>
 </head>
 <body>
 	<%
-		session.invalidate();
+	session.invalidate();
+	
 	%>
-	
 	<script>
-	
-	location.href='index.html'
+	location.href='main.jsp'
 	</script>
 </body>
-</html>
+</html> 
